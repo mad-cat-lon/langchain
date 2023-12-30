@@ -547,7 +547,7 @@ class Chroma(VectorStore):
         """
         if self._embedding_function is None:
             raise ValueError(
-                "For MMR search, you must specify an embedding function on" "creation."
+                "For MMR search, you must specify an embedding function on creation."
             )
 
         embedding = self._embedding_function.embed_query(query)
@@ -611,7 +611,7 @@ class Chroma(VectorStore):
         """
         if self._persist_directory is None:
             raise ValueError(
-                "You must specify a persist_directory on"
+                "You must specify a persist_directory on "
                 "creation to persist the collection."
             )
         import chromadb
